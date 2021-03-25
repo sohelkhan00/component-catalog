@@ -1,0 +1,63 @@
+.input{
+    box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5);
+    margin: 2em;
+}
+
+.input-label{
+    display: inline-block;
+    margin-bottom: 0.667em;
+    font-weight: bold;
+    display: block;
+}
+
+.input-text{
+    min-width: 80%;
+    margin-bottom: 0.667em;
+    height: 2.25em;
+}
+
+.form-text{
+    color: rgb(140, 140, 140);
+}
+
+
+.valid::after{
+    content: "Looks Great";
+    color: green;
+    font-weight: bolder;
+    border-bottom: 2px solid green;
+    display: inline-block;
+    width: 100%;
+}
+
+.invalid::after{
+    content: "Error";
+    color: red;
+    font-weight: bolder;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    width: 100%;
+}
+
+.valid-text{
+    color: green;
+    font-weight: bolder;
+}
+
+.invalid-text{
+    color: red;
+    font-weight: bolder;
+}
+
+.input-line{
+    outline: 0;
+    border-width: 0 0 2px; 
+    min-width: 80%;
+    margin-bottom: 0.667em;
+    height: 2.25em;
+}
+
+.search-bar{
+    display: inline-block;
+    margin: 0 0.5em;
+}

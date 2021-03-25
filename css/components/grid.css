@@ -1,0 +1,6 @@
+.grid-12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    z-index: 10;
+}

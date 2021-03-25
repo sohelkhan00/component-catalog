@@ -1,0 +1,23 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+
+html {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #333;
+  }
+
+body {
+    font-size: 16px; /* 1em */
+    line-height: 1.5em;
+}
+
+.text-small{
+    font-size: 0.667em;
+}
+
+.text-grey{
+    color: #adadad;
+}
+
+.text-center{
+    text-align: center;
+}

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS practice</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/49d846f065.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="grid-12">
+      <header class="header">
+        <nav class="navigation color.primary">
+          <div class="logo">
+           <p class="logo-text">Component Catalog</p>
+          </div>
+          <div class="nav-links">
+            <button class="link">Home</button>
+            <button class="link">About Us</button>
+          </div>
+        </nav>
+      </header>
+      <aside style="margin-top: 15%;" class="aside">
+        <ul>
+          <li><a href="#avatar">Avatar</a></li>
+          <li><a href="#alert">Alert</a></li>
+          <li>
+            <a href="#badge">Badge</a>
+            <ul>
+              <li><a href="#avatar">Badge on Icons</a></li>
+              <li><a href="#avatar">Badge on Avatars</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#button">Button</a>
+            <ul>
+              <li><a href="#avatar">Primary</a></li>
+              <li><a href="#avatar">Link</a></li>
+              <li><a href="#avatar">Icon Button</a></li>
+              <li><a href="#avatar">Floating Action Button</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#card">Card</a>
+            <ul>
+              <li><a href="#avatar">Cards with badges</a></li>
+              <li><a href="#avatar">Cards with dismiss</a></li>
+              <li><a href="#avatar">Cards with text overlay</a></li>
+              <li><a href="#avatar">Text only cards</a></li>
+              <li><a href="#avatar">Vertical/Horizontal cards</a></li>
+              <li><a href="#avatar">Cards with shadow</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#image">Image</a>
+            <ul>
+              <li><a href="#avatar">responsive image</a></li>
+              <li><a href="#avatar">round image</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#input">Input</a>
+            <ul>
+              <li><a href="#avatar">textbox</a></li>
+              <li>
+                <a href="#avatar"
+                  >validation and errors styled (look into material ui or
+                  bootstrap for this)</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#list">Lists</a>
+            <ul>
+              <li><a href="#avatar">Spaced (like normal lists)</a></li>
+              <li><a href="#avatar">Stacked (Notification Page)</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#nav">Navigation</a>
+            <ul>
+              <li><a href="#avatar">Desktop (Simple)</a></li>
+              <li><a href="#avatar">Submenus (do later)</a></li>
+              <li><a href="#avatar">Hamburger/Drawer (do later)</a></li>
+            </ul>
+          </li>
+          <li><a href="#modal">Modal</a></li>
+          <li><a href="#rating">Rating (for ecommerce)</a></li>
+          <li><a href="#slider">Slider (do later)</a></li>
+          <li>
+            <a href="#grid">Simplified Grid</a>
+            <ul>
+              <li><a href="#avatar">grid-2: two items in a grid</a></li>
+              <li><a href="#avatar">grid-3: three items</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#text">Text Utilities</a>
+            <ul>
+              <li><a href="#avatar">headings</a></li>
+              <li><a href="#avatar">small text</a></li>
+              <li><a href="#avatar">gray text</a></li>
+              <li><a href="#avatar">center text</a></li>
+              <li><a href="#avatar"></a></li>
+            </ul>
+          </li>
+          <li><a href="#toast">Toast/Notify/Snackbar</a></li>
+        </ul>
+      </aside>
+      <main style="margin-top: 15%;" class="main">
+        <h1>Components</h1>
+        <!-- Color palette -->
+        <section class="section">
+          <h2>Color Pallete</h2>
+          <div class="colors">
+            <div class="color-primary"><p>primary color</p></div>
+            <div class="color-secondary"><p>secondary color</p></div>
+            <div class="color-greydark"><p>grey dark</p></div>
+            <div class="color-greylight"><p>grey light</p></div>
+            <div class="color-contrast"><p>contrast color</p></div>
+          </div>
+        </section>
+        <!-- Color palette End-->
+        <hr />
+        <!-- Avatar Section -->
+        <section class="section">
+          <h2 id="avatar">Avatar</h2>
+          <img
+            src="./static/images/avatar.png"
+            alt="avatar"
+            class="avatar-round"
+          />
+          <code class="code">
+            &lt;img src="#pic-link" alt="avatar"
+            <span>class="avatar-round"</span>
+            /&gt;
+          </code>
+          <img
+            src="./static/images/avatar.png"
+            alt="avatar"
+            class="avatar-square"
+          />
+          <code class="code">
+            &lt;img src="#pic-link" alt="avatar"
+            <span>class="avatar-square"</span>
+            /&gt;
+          </code>
+        </section>
+        <!-- Avatar Section End-->
+        <hr />
+        <!-- Alert Section -->
+        <section class="section">
+          <h2 id="alert">Alert</h2>
+          <div class="alert">
+            <div class="alert-header">Danger!</div>
+            <div class="alert-content">
+              <i class="fas fa-exclamation-circle"></i> Indicates a dangerous or
+              potentially negative action.
+            </div>
+            <div class="alert-action">
+              <button class="btn btn-close">X</button>
+            </div>
+          </div>
+          <div class="alert alert-danger">
+            <div class="alert-header">Danger!</div>
+            <div class="alert-content">
+              <i class="fas fa-exclamation-circle"></i> Indicates a dangerous or
+              potentially negative action.
+            </div>
+            <div class="alert-action">
+              <button class="btn btn-close">X</button>
+            </div>
+          </div>
+          <div class="alert alert-warning">
+            <div class="alert-header">Warning!</div>
+            <div class="alert-content">
+              <i class="fas fa-exclamation-triangle"></i> Indicates a dangerous
+              or potentially negative action.
+            </div>
+            <div class="alert-action">
+              <button class="btn btn-close">X</button>
+            </div>
+          </div>
+          <div class="alert alert-info">
+            <div class="alert-header">Info!</div>
+            <div class="alert-content">
+              Indicates a dangerous or potentially negative action.
+            </div>
+            <div class="alert-action">
+              <button class="btn btn-close">X</button>
+            </div>
+          </div>
+          <code class="code">
+            <pre>
+            &lt;div <span>class="alert"</span>&gt;
+              &lt;div <span>class="alert-header"</span>&gt;Danger!&lt;/div&gt;
+                &lt;div <span>class="alert-content"</span>&gt;
+                  &lt;i <span>class="fas fa-exclamation-circle"</span>&gt;&lt;/i&gt; 
+                    Indicates a dangerous or potentially negative action.
+                &lt;/div&gt;
+              &lt;div <span>class="alert-action"</span>&gt;&lt;button <span>class="btn btn-close"</span>&gt;X&lt;/button&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+          </code>
+        </section>
+        <!-- Alert Section End-->
+        <hr />
+        <!-- Badge Section -->
+        <section class="section">
+          <h2 id="badge">Badges</h2>
+          <div
+            style="position: relative; border: 1px solid black; height: 50px"
+          >
+            <span class="badge-left">IMPORTANT</span>
+          </div>
+          <div
+            style="position: relative; border: 1px solid black; height: 50px"
+          >
+            <span class="badge-right">IMPORTANT</span>
+          </div>
+          <div class="badge-icon">
+            <i class="fa fa-bell fa-5x fa-border icon"></i>
+            <span class="badge-msg">100</span>
+          </div>
+          <div class="badge-icon">
+            <i class="fas fa-shopping-bag icon"></i>
+            <span class="badge-msg">100</span>
+          </div>
+          
+          <div class="badge-icon">
+            <img
+              src="./static/images/avatar.png"
+              alt="avatar"
+              class="avatar-round icon"
+            />
+            <span class="badge-msg">3</span>
+          </div>
+          <div class="badge-icon">
+            <img
+              src="./static/images/avatar.png"
+              alt="avatar"
+              class="avatar-square"
+            />
+            <span class="badge-msg">3</span>
+          </div>
+          <code class="code">
+            <pre>
+              &lt;div
+            style="position: relative; border: 1px solid black; height: 50px"
+          &gt;
+            &lt;span <span>class="badge-left"</span>&gt;IMPORTANT&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div
+            style="position: relative; border: 1px solid black; height: 50px"
+          &gt;
+            &lt;span <span>class="badge-right"</span>&gt;IMPORTANT&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div <span>class="badge-icon"</span>&gt;
+            &lt;i class="fa fa-bell fa-5x fa-border <span>icon"</span>&gt;&lt;/i&gt;
+            &lt;span <span>class="badge-msg"</span>&gt;100&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div <span>class="badge-icon"</span>&gt;
+            &lt;img
+              src="./static/images/avatar.png"
+              alt="avatar"
+              <span>class="avatar-round icon"</span>
+            /&gt;
+            &lt;span <span>class="badge-msg"</span>&gt;3&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div <span>class="badge-icon"</span>&gt;
+            &lt;img
+              src="./static/images/avatar.png"
+              alt="avatar"
+              <span>class="avatar-square"</span>
+            /&gt;
+            &lt;span <span>class="badge-msg"</span>&gt;3&lt;/span&gt;
+          &lt;/div&gt;
+            </pre>
+          </code>
+        </section>
+        <!-- Badge Section End-->
+        <hr />
+        <!-- Button Section -->
+        <section class="section">
+          <h2 id="button">Buttons</h2>
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <button class="btn btn-ternary">Ternary button</button>
+          <button class="btn btn-oval">Oval</button>
+          <button class="btn btn-round">round</button>
+          <button class="btn btn-text">Text only</button>
+          <button class="btn btn-outline">outline only</button>
+          <button class="btn btn-icon">
+            Icon Button<i class="icon-right fas fa-plus-circle"></i>
+          </button>
+          <a href="www.google.com" class="btn btn-link">Link</a>
+          <i class="fas fa-search btn-float-top"></i>
+          <i class="fas fa-plus-circle btn-float-bottom"></i>
+          <code class="code">
+            <pre>
+            &lt;button <span>class="btn btn-primary"</span>&gt;Primary Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-secondary"</span>&gt;Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-ternary"</span>&gt;Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-oval"</span>&gt;Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-round"</span>&gt;Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-text"</span>&gt;Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-outline"</span>&gt;Button&lt;/button&gt;
+            &lt;button <span>class="btn btn-icon"</span>&gt;Add&lt;i class="icon-right fas fa-plus-circle"&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;a href="www.google.com" <span>class="btn btn-link"</span>&gt;Google&lt;/a&gt;
+            &lt;i <span>class="fas fa-search btn-float-top"</span>&gt;&lt;/i&gt; &lt--- Floating action button top
+            &lt;i <span>class="fas fa-plus-circle btn-float-bottom"</span>&gt;&lt;/i&gt; &lt--- Floating action button bottom
+          </pre>
+          </code>
+        </section>
+        <!-- Button Section End-->
+        <hr />
+        <!-- Card Section -->
+        <section class="section">
+          <h2 id="card">Cards</h2>
+          <div class="card-container">
+            <div class="card">
+              <span class="badge-left">NEW</span>
+              <div class="card-img">
+                <img
+                  src="./static/images/placeholder.png"
+                  alt="card-image"
+                />
+              </div>
+              <div class="card-title">
+                <h2 class="title">Title</h2>
+                <h4 class="sub-title">Sub title</h4>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, nesciunt. Eligendi, quae, totam dolore ipsum natus
+                  iure, ullam animi veniam officiis pariatur explicabo alias?
+                  Sed atque perspiciatis sapiente placeat omnis! Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Molestias ullam
+                  omnis eaque ea illo dolorum doloribus? Officiis, harum eius,
+                  facere, a amet quasi nihil ipsum quisquam numquam nam id
+                  saepe.
+                </p>
+              </div>
+              <div class="actions">
+                <button>Action 1</button>
+                <button>Action 2</button>
+              </div>
+            </div>
+            <div class="card">
+              <button class="btn btn-close">X</button>
+              <div class="card-img">
+                <img
+                  src="./static/images/placeholder.png"
+                  alt="card-image"
+                />
+              </div>
+
+              <div class="card-title">
+                <h2 class="title">Title</h2>
+                <h4 class="sub-title">Sub title</h4>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, nesciunt. Eligendi, quae, totam dolore ipsum natus
+                  iure, ullam animi veniam officiis pariatur explicabo alias?
+                  Sed atque perspiciatis sapiente placeat omnis!
+                </p>
+              </div>
+              <div class="actions">
+                <button>Action 1</button>
+                <button>Action 2</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./static/images/placeholder.png"
+                  alt="card-image"
+                />
+                <p class="card-overlay">
+                  Text overlay for the picture, I dont know what I am writing
+                  but know that i dont want to use lorem ipsum.
+                </p>
+              </div>
+              <div class="card-title">
+                <h2 class="title">Title</h2>
+                <h4 class="sub-title">Sub title</h4>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid, nesciunt. Eligendi, quae, totam dolore ipsum natus
+                  iure, ullam animi veniam officiis pariatur explicabo alias?
+                  Sed atque perspiciatis sapiente placeat omnis!
+                </p>
+              </div>
+              <div class="actions">
+                <button>Action 1</button>
+                <button>Action 2</button>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                <h2 class="title">Title</h2>
+                <h4 class="sub-title">Sub Title</h4>
+              </div>
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Odio, quam quae rerum cupiditate quos dignissimos iusto vel ea
+                  unde. Doloremque similique in, consequatur nesciunt asperiores
+                  voluptas! Veritatis, ab dolores. Blanditiis.
+                </p>
+              </div>
+            </div>
+            <div class="card-horizontal">
+              <div class="card-img">
+                <img
+                  src="./static/images/placeholder.png"
+                  alt="card-image"
+                />
+              </div>
+              <div class="card-hori-content">
+                <div class="card-title">
+                  <h2 class="title">Title</h2>
+                  <h4 class="sub-title">Sub title</h4>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Lorem ipsum ullam animi veniam officiis pariatur explicabo
+                    alias? Sed atque perspiciatis sapiente placeat omnis!
+                  </p>
+                </div>
+                <div class="actions">
+                  <button>Action 1</button>
+                  <button>Action 2</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <code class="code">
+            <pre>
+            &lt;div <span>class="card-container"</span>&gt;
+              &lt;div <span>class="card"</span>&gt;
+                &lt;button <span>class="btn btn-close"</span>&gt;X&lt;/button&gt;
+                &lt;span <span>class="badge-left"</span>&gt;NEW&lt;/span&gt;
+                &lt;div <span>class="card-img"</span>&gt;
+                  &lt;img src="#img-link" alt="card-image"&gt;
+                  &lt;p <span>class="card-overlay"</span>&gt;Text overlay for the picture, I dont know what 
+                  I am writing but know that i dont want to use lorem ipsum.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div <span>class="card-title"</span>&gt;
+                  &lt;h2 <span>class="title"</span>&gt;Title&lt;/h2&gt;
+                  &lt;h4 <span>class="sub-title"</span>&gt;Sub title&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div <span>class="card-content"</span>&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Aliquid, nesciunt. 
+                    Eligendi, quae, totam dolore ipsum natus iure, ullam animi veniam ceat omnis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div <span>class="actions"</span>&gt;
+                  &lt;button&gt;Action 1&lt;/button&gt;
+                  &lt;button&gt;Action 2&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div <span>class="card-text"</span>&gt;
+              &lt;div <span>class="card-title"</span>&gt;
+                &lt;h2 <span>class="title"</span>&gt;Title&lt;/h2&gt;
+                &lt;h4 <span>class="sub-title"</span>&gt;Sub Title&lt;/h4&gt;
+              &lt;/div&gt;
+              &lt;div <span>class="card-content"</span>&gt;
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, 
+                quam quae rerum cupiditate quos dignissimos iusto vel ea unde. 
+                Doloremque similique.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div <span>class="card-horizontal"</span>&gt;
+              &lt;div <span>class="card-img"</span>&gt;
+                &lt;img src="#img-link" alt="card-image"&gt;
+              &lt;/div&gt;
+              &lt;div <span>class="card-hori-content"</span>&gt;
+                &lt;div <span>class="card-title"</span>&gt;
+                  &lt;h2 <span>class="title"</span>&gt;Title&lt;/h2&gt;
+                  &lt;h4 <span>class="sub-title"</span>&gt;Sub title&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div <span>class="card-content"</span>&gt;
+                  &lt;p&gt;Lorem ipsum ullam animi veniam officiis pariatur explicabo alias? 
+                  Sed atque perspiciatis sapiente placeat omnis!&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div <span>class="actions"</span>&gt;
+                  &lt;button&gt;Action 1&lt;/button&gt;
+                  &lt;button&gt;Action 2&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
+          </code>
+        </section>
+
+        <!-- Card Section End-->
+        <hr />
+        <!-- Image Section -->
+        <section class="section">
+          <h2 id="image">Images</h2>
+          <div class="container">
+            <img
+              class="image"
+              src="./static/images/res-img.jpg"
+              alt="quote"
+            />
+            <img
+              class="image-round"
+              src="./static/images/round-img.jpg"
+              alt="office"
+            />
+          </div>
+          <code class="code">
+            <pre>
+            &lt;div class="container"&gt;
+              &lt;img <span>class="image"</span> src="img-link" alt="quote"&gt;
+              &lt;img <span>class="image-round"</span> src="img-link" alt="office"&gt;
+            &lt;/div&gt;
+          </pre
+            >
+          </code>
+        </section>
+        <!-- Image Section End-->
+        <hr />
+        <!-- Input Section -->
+        <section class="section">
+          <h2 id="input">Input</h2>
+          <form action="">
+            <div class="input">
+              <label for="exampleInputEmail1" class="input-label"
+                >Email address:</label
+              >
+              <input
+                type="email"
+                class="input-text"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="input">
+              <label for="exampleInputEmail1" class="input-label"
+                >Email address:</label
+              >
+              <input
+                type="email"
+                class="input-text"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="invalid"></div>
+            </div>
+            <div class="input">
+              <label for="exampleInputEmail1" class="input-label"
+                >Email address:</label
+              >
+              <input
+                type="email"
+                class="input-text"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="valid"></div>
+            </div>
+            <div class="input">
+              <label for="exampleInputEmail1" class="input-label"
+                >Email address:</label
+              >
+              <input
+                type="email"
+                class="input-text"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="invalid-text">
+                Please fill the details.
+              </div>
+            </div>
+            <div class="input">
+              <label for="exampleInputEmail1" class="input-label"
+                >Email address:</label
+              >
+              <input
+                type="email"
+                class="input-line"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                Please fill the details.
+              </div>
+            </div>
+          </form>
+          <code class="code">
+            <pre>
+            &lt;form action=""&gt;
+              &lt;div <span>class="input"</span>&gt;
+                &lt;label for="exampleInputEmail1" <span>class="input-label"</span>&gt;Email address:&lt;/label&gt;
+                &lt;input type="email" <span>class="input-text"</span> id="exampleInputEmail1" aria-describedby="emailHelp"&gt;
+                &lt;div id="emailHelp" <span>class="form-text"</span>&gt;We'll never share your email with anyone else.&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div <span>class="input"</span>&gt;
+                &lt;label for="exampleInputEmail1" <span>class="input-label"</span>&gt;Email address:&lt;/label&gt;
+                &lt;input type="email" <span>class="input-text"</span> id="exampleInputEmail1" aria-describedby="emailHelp"&gt;
+                &lt;div id="emailHelp" <span>class="invalid"</span>&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div <span>class="input"</span>&gt;
+                &lt;label for="exampleInputEmail1" <span>class="input-label"</span>&gt;Email address:&lt;/label&gt;
+                &lt;input type="email" <span>class="input-text"</span> id="exampleInputEmail1" aria-describedby="emailHelp"&gt;
+                &lt;div id="emailHelp" <span>class="valid"</span>&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div <span>class="input"</span>&gt;
+                &lt;label for="exampleInputEmail1" <span>class="input-label"</span>&gt;Email address:&lt;/label&gt;
+                &lt;input type="email" <span>class="input-text"</span> id="exampleInputEmail1" aria-describedby="emailHelp"&gt;
+                &lt;div id="emailHelp" <span>class="invalid-text"</span>&gt;Please fill the details.&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div <span>class="input"</span>&gt;
+                &lt;label for="exampleInputEmail1" <span>class="input-label"</span>&gt;Email address:&lt;/label&gt;
+                &lt;input type="email" <span>class="input-line"</span> id="exampleInputEmail1" aria-describedby="emailHelp"&gt;
+                &lt;div id="emailHelp" <span>class="form-text"</span>&gt;Please fill the details.&lt;/div&gt;
+              &lt;/div&gt;          
+            &lt;/form&gt;
+          </pre
+            >
+          </code>
+        </section>
+
+        <!-- Input Section End-->
+        <hr />
+        <!-- List Section -->
+        <section class="section">
+          <h2 id="list">Lists</h2>
+          <div class="list-ul">
+            <ul>
+              <li>Hello</li>
+              <li>Hi</li>
+            </ul>
+          </div>
+          <code class="code">
+            <pre>
+          &lt;div <span>class="list-ul"</span>&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Hello&lt;/li&gt;
+              &lt;li&gt;Hi&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+            </pre>
+          </code>
+          <div class="list-stacked">
+            <ul>
+              <li>Hello</li>
+              <li>Hi</li>
+              <li>why</li>
+              <li>yo</li>
+            </ul>
+          </div>
+          <code class="code">
+            <pre>
+          &lt;div <span>class="list-stacked"</span>&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Hello&lt;/li&gt;
+              &lt;li&gt;Hi&lt;/li&gt;
+              &lt;li&gt;why&lt;/li&gt;
+              &lt;li&gt;yo&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        </pre
+            >
+          </code>
+          <div class="list-ol">
+            <ol>
+              <li>Hello</li>
+              <li>Hi</li>
+            </ol>
+          </div>
+          <code class="code">
+            <pre>
+          &lt;div <span>class="list-ol"</span>&gt;
+            &lt;ol&gt;
+              &lt;li&gt;Hello&lt;/li&gt;
+              &lt;li&gt;Hi&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/div&gt;
+        </pre
+            >
+          </code>
+          <div class="list-ol-r">
+            <ol>
+              <li>Hello</li>
+              <li>Hi</li>
+            </ol>
+          </div>
+          <code class="code">
+            <pre>
+          &lt;div <span>class="list-ol-r"</span>&gt;
+            &lt;ol&gt;
+              &lt;li&gt;Hello&lt;/li&gt;
+              &lt;li&gt;Hi&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/div&gt;
+        </pre
+            >
+          </code>
+        </section>
+
+        <!-- List Section End -->
+        <hr />
+        <!-- Search Bar -->
+        <section class="section">
+          <h2>Search Bar</h2>
+          <div class="search-bar">
+            <button><i class="fas fa-search"></i></button>
+            <input type="text" name="search-bar" id="search-bar" />
+          </div>
+          <code class="code">
+            <pre>
+              &lt;div <span>class="search-bar"</span>&gt;
+                &lt;button&gt;&lt;i <span>class="fas fa-search"</span>&gt;&lt;/i&gt;&lt;/button&gt;
+                &lt;input type="text" name="search-bar" id="search-bar" /&gt;
+              &lt;/div&gt;
+            </pre>
+          </code>
+        </section>
+
+        <!-- Search Bar End-->
+        <hr />
+        <!-- Navigation section -->
+        <section class="section">
+          <h2 id="nav">Navigation</h2>
+          <nav class="navigation">
+            <div class="logo">
+              <img
+                src="./static/images/logo.jpg"
+                alt="logo"
+              />
+              <p class="logo-text">Google</p>
+            </div>
+            <div class="search-bar">
+              <button><i class="fas fa-search"></i></button>
+              <input type="text" name="search-bar" id="search-bar" />
+            </div>
+            <div class="nav-links">
+              <button class="link">Home</button>
+              <button class="link">Home</button>
+              <button class="link">Home</button>
+              <button class="link">Home</button>
+            </div>
+          </nav>
+          <code class="code">
+            <pre>
+          &lt;nav <span>class="navigation"</span>&gt;
+            &lt;div <span>class="logo"</span>&gt;
+             &lt;img src="#img-link" alt="logo"&gt;
+             &lt;p <span>class="logo-text"</span>&gt;Google&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div <span>class="search-bar"</span>&gt;
+              &lt;button&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+              &lt;input type="text" name="search-bar" id="search-bar"&gt;
+            &lt;/div&gt;
+            &lt;div <span>class="nav-links"</span>&gt;
+              &lt;button <span>class="link"</span>&gt;Home&lt;/button&gt;
+              &lt;button <span>class="link"</span>&gt;Home&lt;/button&gt;
+              &lt;button <span>class="link"</span>&gt;Home&lt;/button&gt;
+              &lt;button <span>class="link"</span>&gt;Home&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/nav&gt;
+         </pre
+            >
+          </code>
+        </section>
+
+        <!-- Navigation section End-->
+        <hr />
+        <!-- Modal -->
+        <section class="section">
+          <h2 id="modal">Modal</h2>
+          <div class="modal">
+            <div class="modal-header">Model Title</div>
+            <div class="modal-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perferendis amet soluta ut saepe, deserunt, exercitationem animi
+                eos dolorem suscipit in expedita odit odio. Tempora atque soluta
+                dicta! Doloremque, magnam repellat.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button>Save</button>
+              <button>Cancel</button>
+            </div>
+          </div>
+          <code class="code">
+            <pre>
+          &lt;div <span>class="modal"</span>&gt;
+            &lt;div <span>class="modal-header"</span>&gt;Model Title&lt;/div&gt;
+            &lt;div <span>class="modal-content"</span>&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet. 
+              Tempora atque soluta dicta! Doloremque, magnam repellat.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div <span>class="modal-footer"</span>&gt;
+              &lt;button&gt;Save&lt;/button&gt;
+              &lt;button&gt;Cancel&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+         </pre
+            >
+          </code>
+        </section>
+
+        <!-- Modal End-->
+        <!-- Rating -->
+        <section class="section">
+          <h2>Rating</h2>
+        </section>
+        <!-- Rating End -->
+        <hr />
+        <!-- Text Utilities -->
+        <section class="section">
+          <h2 id="text">Headings</h2>
+          <h1>Heading text</h1>
+          <h2>Heading text</h2>
+          <h3>Heading text</h3>
+          <h4>Heading text</h4>
+          <h5>Heading text</h5>
+          <h6>Heading text</h6>
+          <h2>small text</h2>
+          <p class="text-small">small text</p>
+          <code class="code">
+            &lt;p <span>class="text-small"</span>&gt;small text&lt;/p&gt;
+          </code>
+          <h2>gray text</h2>
+          <p class="text-grey">grey text</p>
+          <code class="code">
+            &lt;p <span>class="text-grey"</span>&gt;grey text&lt;/p&gt;
+          </code>
+          <h2>center text</h2>
+          <div class="container">
+            <p class="text-center">center text</p>
+          </div>
+          <code class="code">
+            <pre>
+          &lt;div <span>class="container"</span>&gt;
+            &lt;p <span>class="text-center"</span>&gt;center text&lt;/p&gt;
+          &lt;/div&gt;
+        </pre
+            >
+          </code>
+        </section>
+        <!-- Text Utilities End-->
+      </main>
+      <footer class="footer color-secondary">
+        <p class="text-center text-light"> By Sohel Khan &copy; 2020-21 </p>
+      </footer>
+    </div>
+  </body>
+</html>
