@@ -1,0 +1,32 @@
+.border-primary {
+    border: 1px solid #24a0ed;
+  }
+  
+  .border-info {
+    border: 1px solid #17a2b8;
+  }
+  
+  .border-success {
+    border: 1px solid #28a745;
+  }
+  
+  .border-warning {
+    border: 1px solid #ffc107;
+  }
+  
+  .border-danger {
+    border: 1px solid #dc3545;
+  }
+  
+  .border-dark {
+    border: 1px solid #343a40;
+  }
+  
+  .border-secondary {
+    border: 1px solid #6c757d;
+  }
+  
+  .border-light {
+    border: 1px solid #f8f9fa;
+  }
+  

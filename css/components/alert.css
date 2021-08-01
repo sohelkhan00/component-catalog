@@ -1,0 +1,32 @@
+.alert{
+    width: 80%;
+    min-height: 5em;
+    margin: 1em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.alert-danger{
+    background-color: #dc3545;
+    color: white;
+}
+
+.alert-success{
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-info{
+    background-color: #17a2b8;
+    color: white;
+}
+
+.alert-warning{
+    background-color: #ffc107;
+    color: white;
+}
+

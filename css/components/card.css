@@ -1,0 +1,125 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 -10px 0 3px;
+    width: 100%;
+
+}
+
+.card{
+    min-width: 5em;
+    max-width: 15em;
+    text-align: left;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    margin:  0 0 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-text{
+    min-width: 5em;
+    max-width: 15em;
+    text-align: left;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    margin:  0 0 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-text *{
+    margin: 0 0 1em;
+}
+
+.card-horizontal{
+    min-width: 15em;
+    max-width: 30em;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 0 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+
+.card-horizontal img{
+    margin: 0 10px 0 0;
+}
+
+.card-horizontal .actions{
+    align-self: flex-end;
+}
+
+.card-horizontal .card-hori-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card .title, .card-text .title, .card-horizontal .title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card .sub-title, .card-text .sub-title, .card-horizontal .sub-title{
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+
+.card .card-content, .card-text .card-content, .card-horizontal .card-content{
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 500;
+    line-height: 15px;
+    margin: 10px 0 6px;
+    flex-grow: 1;
+}
+
+.card .card-img img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.card .actions{
+    align-self: flex-end;
+}
+
+.card .actions button{
+    margin: 5px;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 10px;
+}

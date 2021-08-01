@@ -1,0 +1,21 @@
+.modal{
+    width: 50%;
+    margin: auto;
+    border: 1px solid gray;
+    padding: 0.66em;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.modal *{
+    margin: 0.66em 0;
+}
+
+.modal .modal-footer{
+    align-self: flex-end;
+}
+
+.modal .modal-footer button{
+    margin-left: 1em;
+}

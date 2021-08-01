@@ -1,0 +1,11 @@
+.avatar-round {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+  }
+  
+.avatar-square{
+  height: 5em;
+  width: 5em;
+  border-radius: 5%;
+}

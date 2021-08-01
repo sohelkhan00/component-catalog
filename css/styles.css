@@ -1,0 +1,121 @@
+@import url("./components/avatar.css");
+@import url("./components/button.css");
+@import url("./components/bg-color.css");
+@import url("./components/border.css");
+@import url("./components/text-color.css");
+@import url("./components/card.css");
+@import url("./components/badge.css");
+@import url("./components/banner.css");
+@import url("./components/alert.css");
+@import url("./components/container.css");
+@import url("./components/image.css");
+@import url("./components/input.css");
+@import url("./components/reset.css");
+@import url("./components/heading.css");
+@import url("./components/list.css");
+@import url("./components/navigation.css");
+@import url("./components/modal.css");
+@import url("./components/rating.css");
+@import url("./components/color-palette.css");
+@import url("./components/text.css");
+@import url("./components/grid.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/*------------------------------------*
+  LAYOUT
+*------------------------------------*/
+
+.header {
+  grid-column: 1/13;
+  grid-row: 1;
+  background-color: #6c757d;
+  max-height: 10vh;
+}
+
+.aside {
+  grid-row: 2;
+  grid-column: 1/3;
+  position: sticky;
+  top: 0;
+  overflow-y: scroll;
+  max-height: 100vh;
+  min-width: 15vw;
+}
+
+.aside ul{
+  margin-left: 1.5em;
+}
+
+.aside ul li{
+  margin: 0.667em 0;
+}
+
+.main {
+  grid-column: 3/13;
+  grid-row: 2;
+}
+
+.section{
+  margin: 4em 0;
+}
+
+.footer {
+  grid-column: 3/13;
+  grid-row: 3;
+}
+
+.code pre{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/*------------------------------------*
+  MAIN
+*------------------------------------*/
+
+
+.code{
+  display: block;
+  margin: 2em 0;
+}
+
+.code span{
+  color: red;
+}

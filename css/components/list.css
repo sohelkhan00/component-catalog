@@ -1,0 +1,37 @@
+.list-ul ul{
+    list-style-type: none;
+    padding: 1em;
+    margin: 1em;
+}
+
+.list-ol ol{
+    padding: 1em;
+    margin: 1em;
+}
+
+.list-ol-r ol{
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.list-ol-r ol li{
+    padding: 0 0.6em;
+}
+
+.list-ol ol li{
+    padding: 0 0.6em;
+}
+
+.list-stacked ul{
+    list-style-type: none;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+.list-stacked ul li{
+    padding: -5px;
+    margin: -5px;
+}
